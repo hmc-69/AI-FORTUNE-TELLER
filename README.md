@@ -1,6 +1,7 @@
 # AI Fortune Teller
 
 A retro-themed AI Fortune Teller app that provides users with quirky, insightful, or humorous daily fortunes. The app is designed to look and feel like an old-school crystal ball machine or DOS-style terminal.
+You check it out at https://ai-fortune-teller-six.vercel.app/
 
 ## Features
 
