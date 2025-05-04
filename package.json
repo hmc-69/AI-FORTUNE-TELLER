@@ -1,0 +1,22 @@
+{
+  "name": "ai-fortune-teller",
+  "version": "1.0.0",
+  "description": "A retro-themed AI Fortune Teller app that provides quirky, insightful, or humorous daily fortunes",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -o",
+    "cli": "node src/js/fortune-cli.js"
+  },
+  "keywords": [
+    "fortune",
+    "ai",
+    "retro",
+    "amazon-q",
+    "entertainment"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

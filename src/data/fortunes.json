@@ -1,0 +1,50 @@
+{
+  "life": [
+    "The path less traveled will lead to unexpected treasures.",
+    "A moment of patience in a moment of anger saves a thousand moments of regret.",
+    "Your greatest strength is not in never falling, but in rising every time you fall.",
+    "The universe rewards those who follow their curiosity.",
+    "Today is the perfect day to start something that your future self will thank you for.",
+    "The comfort zone is a beautiful place, but nothing ever grows there.",
+    "Your kindness today will return to you tenfold tomorrow.",
+    "The most important relationship you'll ever have is with yourself.",
+    "Sometimes the smallest step in the right direction ends up being the biggest step of your life.",
+    "The obstacle is the path."
+  ],
+  "career": [
+    "Your next big opportunity will come disguised as a small one.",
+    "The project you're hesitant to start will become your greatest achievement.",
+    "A mentor will appear when you're ready to level up your skills.",
+    "Your unique perspective is your professional superpower.",
+    "The skill you're learning now will be crucial three years from today.",
+    "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "Your career path may not be linear, but every twist has purpose.",
+    "The email you've been avoiding contains an opportunity.",
+    "The question you're afraid to ask is the one that needs asking most.",
+    "Your work will be recognized by someone who matters more than you realize."
+  ],
+  "tech": [
+    "The best code is no code at all.",
+    "There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.",
+    "It's not a bug – it's an undocumented feature.",
+    "The cloud is just someone else's computer.",
+    "Weeks of coding can save you hours of planning.",
+    "A good programmer is someone who always looks both ways before crossing a one-way street.",
+    "Documentation is like true love – it is talked about more than it exists.",
+    "The code you write today will be maintained by a future developer who knows where you live.",
+    "There's no place like 127.0.0.1.",
+    "Programming is like writing a book... except if you miss a single comma, the entire book makes no sense."
+  ],
+  "code": [
+    "function findYourPath(options) {\n  return options.filter(path => path.bringsJoy)\n    .sort((a, b) => b.opportunity - a.opportunity)[0];\n}\n// Your destiny awaits in unexpected functions",
+    "try {\n  life.execute(plans);\n} catch (uncertainty) {\n  adapt(uncertainty);\n  grow();\n}\n// Errors are just redirections to better outcomes",
+    "// The algorithm of success:\nwhile (!success) {\n  tryAgain();\n  if (needHelp()) askForHelp();\n  learnFromMistakes();\n}\n// Persistence always terminates the loop",
+    "const future = new Promise((resolve, reject) => {\n  if (takeActionNow()) {\n    resolve('Dreams fulfilled');\n  } else {\n    reject('Opportunity missed');\n  }\n});\n// Your future awaits resolution",
+    "class Opportunity {\n  constructor() {\n    this.knocked = false;\n  }\n  \n  knock() {\n    this.knocked = true;\n    return 'Will you answer?';\n  }\n}\n// An instance is being created right now",
+    "// The recursive function of growth\nfunction grow(skills) {\n  if (skills.mastered) return skills;\n  \n  const newSkills = learn(skills);\n  return grow(newSkills);\n}\n// Your potential has no base case",
+    "let today = new Day();\ntoday.addEventListener('challenge', (event) => {\n  const solution = your.creativity.solve(event.challenge);\n  return solution;\n});\n// Your handlers are ready",
+    "async function success() {\n  const hardWork = await effort.consistent();\n  const opportunity = await patience.maintain();\n  return hardWork.combine(opportunity);\n}\n// The await will be worth it",
+    "function balance(work, life) {\n  if (work > life) {\n    return adjustPriorities();\n  }\n  return happiness.optimize();\n}\n// Your equilibrium function needs calling",
+    "// The hidden API of life\nfetch('universe/opportunities')\n  .then(response => response.json())\n  .then(data => {\n    const path = choosePath(data.options);\n    navigate(path);\n  })\n  .catch(fear => overcome(fear));\n// Your request is processing"
+  ]
+}

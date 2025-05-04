@@ -1,0 +1,264 @@
+/* Retro Theme Styles */
+:root {
+    --primary-color: #00ffff;
+    --secondary-color: #ff00ff;
+    --background-color: #000033;
+    --text-color: #ffffff;
+    --crystal-color: rgba(0, 255, 255, 0.3);
+    --crystal-glow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    line-height: 1.6;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 20%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 15px;
+}
+
+.retro-text {
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.glow {
+    text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color);
+    color: var(--primary-color);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.blink {
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+/* Crystal Ball Styles */
+.crystal-ball-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.crystal-ball {
+    width: 250px;
+    height: 250px;
+    background: var(--crystal-color);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: var(--crystal-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.crystal-ball:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 1);
+    transform: scale(1.05);
+}
+
+.crystal-ball:active {
+    transform: scale(0.95);
+}
+
+.inner-glow {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.fortune-text {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    max-width: 90%;
+}
+
+/* Button Styles */
+.retro-button {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 10px;
+}
+
+.retro-button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Fortune Type Selector */
+.fortune-type-selector {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 15px;
+    border: 1px dashed var(--secondary-color);
+}
+
+.retro-label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.radio-group input[type="radio"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.radio-group label {
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+/* History Section */
+.history-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid var(--primary-color);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.history-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-item {
+    padding: 10px;
+    border-left: 3px solid var(--secondary-color);
+    background-color: rgba(255, 0, 255, 0.1);
+}
+
+.empty-history {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
+/* Share Section */
+.share-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Code Fortune Styling */
+.code-fortune {
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-left: 3px solid var(--primary-color);
+    text-align: left;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .crystal-ball {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .retro-text {
+        font-size: 1.2rem;
+    }
+    
+    .radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .radio-group label {
+        margin-bottom: 10px;
+    }
+}

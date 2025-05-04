@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fortune Teller</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="retro-text glow">AI Fortune Teller</h1>
+            <p class="subtitle blink">Version 1.0</p>
+        </header>
+        
+        <main>
+            <div class="crystal-ball-container">
+                <div class="crystal-ball" id="crystal-ball">
+                    <div class="inner-glow"></div>
+                    <div class="fortune-text" id="fortune-display">Click the crystal ball to reveal your fortune...</div>
+                </div>
+                <button class="retro-button" id="fortune-button">REVEAL FORTUNE</button>
+            </div>
+            
+            <div class="fortune-type-selector">
+                <label class="retro-label">SELECT FORTUNE TYPE:</label>
+                <div class="radio-group">
+                    <input type="radio" id="life-advice" name="fortune-type" value="life" checked>
+                    <label for="life-advice">Life Advice</label>
+                    
+                    <input type="radio" id="career-insights" name="fortune-type" value="career">
+                    <label for="career-insights">Career Insights</label>
+                    
+                    <input type="radio" id="tech-proverbs" name="fortune-type" value="tech">
+                    <label for="tech-proverbs">Tech Proverbs</label>
+                    
+                    <input type="radio" id="code-prophecy" name="fortune-type" value="code">
+                    <label for="code-prophecy">Today's Code</label>
+                </div>
+            </div>
+            
+            <div class="history-section">
+                <h2 class="retro-text">Fortune History</h2>
+                <div class="history-container" id="fortune-history">
+                    <p class="empty-history">Your past fortunes will appear here...</p>
+                </div>
+            </div>
+            
+            <div class="share-section">
+                <button class="retro-button" id="share-button">SHARE FORTUNE</button>
+                <button class="retro-button" id="copy-button">COPY FORTUNE</button>
+            </div>
+        </main>
+        
+        <footer>
+            <p class="footer-text">Created with Amazon Q Developer | &copy; 2023</p>
+        </footer>
+    </div>
+    
+    <script src="src/js/fortunes.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>
